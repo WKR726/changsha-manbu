@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>长沙漫游 · Changsha Citywalk</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;700;900&family=Noto+Sans+SC:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Crect width=%2764%27 height=%2764%27 rx=%2712%27 fill=%27%23DB3356%27/%3E%3Ctext x=%2732%27 y=%2744%27 font-size=%2734%27 text-anchor=%27middle%27 fill=%27%23F2EFE9%27 font-family=%27serif%27%3E湘%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="m-body">
+<div class="shell" id="top">
+
+  <!-- Hero -->
+  <header class="m-hero">
+    <img class="m-hero-img" src="assets/hero-sunset.jpg" alt="湘江日落，远处岳麓山剪影">
+    <div class="m-hero-band">
+      <span class="seal m-hero-seal">湘</span>
+      <p class="m-hero-tag">湖南 · 长沙 · CITYWALK</p>
+      <h1 class="m-hero-title">长沙漫游</h1>
+      <p class="m-hero-en">CHANGSHA CITYWALK</p>
+      <p class="m-hero-sub">一座城市的慢节奏——从清晨的米粉香，到深夜的民谣与霓虹，用一天时间，把长沙走成自己的。</p>
+      <p class="m-scroll-hint">
+        <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 4v14m0 0l-6-6m6 6l6-6"/></svg>
+        向下滑动 · 开始漫游
+      </p>
+    </div>
+  </header>
+
+  <!-- 走马灯 -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>太平老街</span><i>·</i><span>坡子街</span><i>·</i><span>岳麓书院</span><i>·</i><span>橘子洲头</span><i>·</i><span>化龙池</span><i>·</i><span>湘江夜景</span><i>·</i>
+      <span>太平老街</span><i>·</i><span>坡子街</span><i>·</i><span>岳麓书院</span><i>·</i><span>橘子洲头</span><i>·</i><span>化龙池</span><i>·</i><span>湘江夜景</span><i>·</i>
+    </div>
+  </div>
+
+  <!-- 城市印象 -->
+  <section class="m-sec" id="impression">
+    <header class="sec-head reveal">
+      <p class="sec-en">Impression</p>
+      <h2 class="sec-title">城市印象</h2>
+      <div class="rule"></div>
+    </header>
+    <article class="imp-card reveal" style="--d:.05s">
+      <img class="imp-img" src="assets/old-street.jpg" alt="黄昏时分的太平老街，红灯笼亮起">
+      <div class="imp-cap"><h3>长沙老街烟火</h3><span>Old Street</span></div>
+      <p>石板路、红灯笼，巷子里的烟火气从清晨烧到深夜。</p>
+    </article>
+    <article class="imp-card reveal" style="--d:.12s">
+      <img class="imp-img" src="assets/hero-wide.jpg" alt="湘江两岸的城市夜景">
+      <div class="imp-cap"><h3>湘江夜景</h3><span>River Night</span></div>
+      <p>一江两岸，灯火倒映，晚风把白天吹成了霓虹。</p>
+    </article>
+    <article class="imp-card reveal" style="--d:.19s">
+      <img class="imp-img" src="assets/snack-tea.jpg" alt="臭豆腐与奶茶的长沙味道">
+      <div class="imp-cap"><h3>舌尖长沙</h3><span>Taste</span></div>
+      <p>臭豆腐配奶茶，辣与甜在这里握手言和。</p>
+    </article>
+  </section>
+
+  <!-- 经典一日路线 -->
+  <section class="m-sec" id="route">
+    <header class="sec-head reveal">
+      <p class="sec-en">Route</p>
+      <h2 class="sec-title">经典一日路线</h2>
+      <div class="rule"></div>
+    </header>
+    <div class="route-list">
+      <svg class="route-rail" aria-hidden="true"><path d=""/></svg>
+      <article class="stop reveal" data-key="taiping" role="button" tabindex="0" aria-label="查看太平老街详情">
+        <p class="stop-time">09:00</p>
+        <div class="stop-row">
+          <div class="stop-info">
+            <h3>太平老街</h3>
+            <p>青石板路与百年老店，从一碗肉丝粉开始。</p>
+            <span class="stop-more">点击查看详情 →</span>
+          </div>
+          <img class="stop-thumb" src="assets/old-street.jpg" alt="太平老街">
+        </div>
+      </article>
+      <article class="stop reveal" data-key="pozi" role="button" tabindex="0" aria-label="查看坡子街详情">
+        <p class="stop-time">11:30</p>
+        <div class="stop-row">
+          <div class="stop-info">
+            <h3>坡子街</h3>
+            <p>火宫殿的臭豆腐，是这座城市的见面礼。</p>
+            <span class="stop-more">点击查看详情 →</span>
+          </div>
+          <img class="stop-thumb" src="assets/snack-tea.jpg" alt="坡子街小吃">
+        </div>
+      </article>
+      <article class="stop reveal" data-key="yuelu" role="button" tabindex="0" aria-label="查看岳麓书院详情">
+        <p class="stop-time">14:00</p>
+        <div class="stop-row">
+          <div class="stop-info">
+            <h3>岳麓书院</h3>
+            <p>千年学府，在古树与碑刻间坐一会儿。</p>
+            <span class="stop-more">点击查看详情 →</span>
+          </div>
+          <img class="stop-thumb" src="assets/academy.jpg" alt="岳麓书院">
+        </div>
+      </article>
+      <article class="stop reveal" data-key="juzizhou" role="button" tabindex="0" aria-label="查看橘子洲头详情">
+        <p class="stop-time">17:00</p>
+        <div class="stop-row">
+          <div class="stop-info">
+            <h3>橘子洲头</h3>
+            <p>湘江中心的绿岛，看一场江上日落。</p>
+            <span class="stop-more">点击查看详情 →</span>
+          </div>
+          <img class="stop-thumb" src="assets/hero-sunset.jpg" alt="橘子洲头日落">
+        </div>
+      </article>
+      <article class="stop reveal" data-key="bar" role="button" tabindex="0" aria-label="查看化龙池酒吧街详情">
+        <p class="stop-time">20:00</p>
+        <div class="stop-row">
+          <div class="stop-info">
+            <h3>化龙池酒吧街</h3>
+            <p>老巷入夜，民谣与霓虹刚刚开场。</p>
+            <span class="stop-more">点击查看详情 →</span>
+          </div>
+          <img class="stop-thumb" src="assets/hero-wide.jpg" alt="化龙池夜色">
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- 小众宝藏地图 -->
+  <section class="m-sec" id="map">
+    <header class="sec-head reveal">
+      <p class="sec-en">Hidden Gems</p>
+      <h2 class="sec-title">小众宝藏地图</h2>
+      <div class="rule"></div>
+    </header>
+    <div class="map-panel reveal">
+      <svg class="map-svg" viewBox="0 0 400 430" role="group" aria-label="长沙小众去处示意地图">
+        <!-- 城廓 -->
+        <path d="M60 72 C40 122 32 182 46 242 C60 302 72 342 112 376 C152 410 232 414 282 394 C332 374 360 330 364 270 C368 210 354 150 328 104 C302 60 258 40 198 43 C138 46 80 26 60 72 Z"
+              fill="#EFE7D6" stroke="#8A7B5C" stroke-width="2" stroke-linejoin="round"/>
+        <!-- 湘江 -->
+        <path d="M150 18 C166 92 138 160 158 232 C178 304 148 356 168 408"
+              fill="none" stroke="#9FBBA6" stroke-width="11" stroke-linecap="round" opacity=".6"/>
+        <text x="136" y="220" font-size="11" fill="#6E8B76" letter-spacing="4" transform="rotate(-84 136 220)">湘江</text>
+        <!-- 山 -->
+        <path d="M78 262 l14 -20 l14 20 z M96 262 l11 -15 l11 15 z" fill="#B0C6B3" opacity=".8"/>
+        <text x="70" y="282" font-size="10" fill="#6E8B76" letter-spacing="2">岳麓山</text>
+        <!-- 北 -->
+        <g transform="translate(352,42)">
+          <circle r="13" fill="none" stroke="#8A7B5C" stroke-width="1.4"/>
+          <path d="M0 6 L0 -7 M-4 -2 L0 -7 L4 -2" stroke="#8A7B5C" stroke-width="1.4" fill="none"/>
+          <text y="27" font-size="9" fill="#8A7B5C" text-anchor="middle">北</text>
+        </g>
+        <!-- 图钉 -->
+        <g class="map-pin" data-key="tongguan" role="button" tabindex="0" aria-label="铜官窑古镇" transform="translate(96,66)">
+          <circle class="halo" r="11" fill="none"/><circle class="ring" r="7"/><circle class="dot" r="4.5"/>
+          <text y="23" text-anchor="middle">铜官窑古镇</text>
+        </g>
+        <g class="map-pin" data-key="chaozong" role="button" tabindex="0" aria-label="潮宗街" transform="translate(212,96)">
+          <circle class="halo" r="11" fill="none"/><circle class="ring" r="7"/><circle class="dot" r="4.5"/>
+          <text y="23" text-anchor="middle">潮宗街</text>
+        </g>
+        <g class="map-pin" data-key="hualong" role="button" tabindex="0" aria-label="化龙池" transform="translate(298,130)">
+          <circle class="halo" r="11" fill="none"/><circle class="ring" r="7"/><circle class="dot" r="4.5"/>
+          <text y="23" text-anchor="middle">化龙池</text>
+        </g>
+        <g class="map-pin" data-key="xiyuan" role="button" tabindex="0" aria-label="西园北里" transform="translate(172,150)">
+          <circle class="halo" r="11" fill="none"/><circle class="ring" r="7"/><circle class="dot" r="4.5"/>
+          <text y="23" text-anchor="middle">西园北里</text>
+        </g>
+        <g class="map-pin" data-key="duzheng" role="button" tabindex="0" aria-label="都正街" transform="translate(238,196)">
+          <circle class="halo" r="11" fill="none"/><circle class="ring" r="7"/><circle class="dot" r="4.5"/>
+          <text y="23" text-anchor="middle">都正街</text>
+        </g>
+        <g class="map-pin" data-key="xiezilong" role="button" tabindex="0" aria-label="谢子龙影像艺术馆" transform="translate(116,238)">
+          <circle class="halo" r="11" fill="none"/><circle class="ring" r="7"/><circle class="dot" r="4.5"/>
+          <text y="23" text-anchor="middle">谢子龙影像馆</text>
+        </g>
+        <g class="map-pin" data-key="lizijian" role="button" tabindex="0" aria-label="李自健美术馆" transform="translate(128,308)">
+          <circle class="halo" r="11" fill="none"/><circle class="ring" r="7"/><circle class="dot" r="4.5"/>
+          <text y="23" text-anchor="middle">李自健美术馆</text>
+        </g>
+        <g class="map-pin" data-key="houhu" role="button" tabindex="0" aria-label="后湖国际艺术区" transform="translate(230,340)">
+          <circle class="halo" r="11" fill="none"/><circle class="ring" r="7"/><circle class="dot" r="4.5"/>
+          <text y="23" text-anchor="middle">后湖艺术区</text>
+        </g>
+      </svg>
+      <p class="map-hint">示意地图 · 点击图钉查看去处</p>
+    </div>
+  </section>
+
+  <!-- 美食图鉴 -->
+  <section class="m-sec" id="food">
+    <header class="sec-head reveal">
+      <p class="sec-en">Food Guide</p>
+      <h2 class="sec-title">美食图鉴</h2>
+      <div class="rule"></div>
+    </header>
+    <div class="food-grid">
+      <button class="food-card reveal" data-key="tofu" style="--d:.05s">
+        <img src="assets/tofu.jpg" alt="臭豆腐">
+        <div class="fc-body"><h3>臭豆腐</h3><span>Stinky Tofu</span><p>外脆里嫩，一勺剁椒点睛。</p></div>
+      </button>
+      <button class="food-card reveal" data-key="milktea" style="--d:.1s">
+        <img src="assets/milktea.jpg" alt="茶颜悦色">
+        <div class="fc-body"><h3>茶颜悦色</h3><span>Sexytea</span><p>忌廉雪顶，碧根果碎。</p></div>
+      </button>
+      <button class="food-card reveal" data-key="crayfish" style="--d:.15s">
+        <img src="assets/crayfish.jpg" alt="口味虾">
+        <div class="fc-body"><h3>口味虾</h3><span>Crayfish</span><p>夏夜主角，配冰啤酒。</p></div>
+      </button>
+      <button class="food-card reveal" data-key="tangyou" style="--d:.2s">
+        <img src="assets/tangyou.jpg" alt="糖油粑粑">
+        <div class="fc-body"><h3>糖油粑粑</h3><span>Rice Cake</span><p>焦糖脆壳，软糯拉丝。</p></div>
+      </button>
+    </div>
+  </section>
+
+  <!-- 实用信息 -->
+  <section class="m-sec m-sec-last" id="tips">
+    <header class="sec-head reveal">
+      <p class="sec-en">Tips</p>
+      <h2 class="sec-title">实用信息</h2>
+      <div class="rule"></div>
+    </header>
+    <div class="tabs reveal">
+      <div class="tab-bar" role="tablist" aria-label="实用信息分类">
+        <span class="tab-ink" aria-hidden="true"></span>
+        <button class="tab-btn" role="tab" aria-selected="true" aria-controls="tp-traffic" id="tb-traffic">交通</button>
+        <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tp-stay" id="tb-stay" tabindex="-1">住宿</button>
+        <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tp-tips" id="tb-tips" tabindex="-1">贴士</button>
+      </div>
+      <div class="tab-panel" role="tabpanel" id="tp-traffic" aria-labelledby="tb-traffic">
+        <div class="tip-item">
+          <span class="tip-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="5" y="3" width="14" height="14" rx="3"/><path d="M5 10h14M9 21l1-4m5 4l-1-4"/><circle cx="9" cy="13.5" r=".8" fill="currentColor"/><circle cx="15" cy="13.5" r=".8" fill="currentColor"/></svg></span>
+          <div><h4>地铁</h4><p>6 条主线覆盖主要景点，橘子洲、岳麓山、五一广场均可直达，支持乘车码。</p></div>
+        </div>
+        <div class="tip-item">
+          <span class="tip-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="4" y="4" width="16" height="13" rx="2.5"/><path d="M4 11h16M8 21l1.2-4m5.6 4L13.6 17"/><circle cx="8.5" cy="14" r=".8" fill="currentColor"/><circle cx="15.5" cy="14" r=".8" fill="currentColor"/></svg></span>
+          <div><h4>公交</h4><p>线路密集、票价两元，老街片区公交比打车更快，高峰期优先选择。</p></div>
+        </div>
+        <div class="tip-item">
+          <span class="tip-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="6" cy="17" r="3.4"/><circle cx="18" cy="17" r="3.4"/><path d="M6 17l3.5-8h5l3.5 8M9.5 9L8 5.5h2.5"/></svg></span>
+          <div><h4>骑行 + 步行</h4><p>老城区巷子多，共享单车加步行，才是打开长沙的正确方式。</p></div>
+        </div>
+      </div>
+      <div class="tab-panel" role="tabpanel" id="tp-stay" aria-labelledby="tb-stay" hidden>
+        <div class="tip-item">
+          <span class="tip-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 20h18M5 20V9l7-5 7 5v11"/><path d="M10 20v-5h4v5"/></svg></span>
+          <div><h4>五一广场 / 黄兴路</h4><p>吃喝玩乐下楼即达，夜生活零距离，适合第一次来长沙的人。</p></div>
+        </div>
+        <div class="tip-item">
+          <span class="tip-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2 17c2.5 0 2.5 1.6 5 1.6S9.5 17 12 17s2.5 1.6 5 1.6 2.5-1.6 5-1.6M2 12.5c2.5 0 2.5 1.6 5 1.6s2.5-1.6 5-1.6 2.5 1.6 5 1.6 2.5-1.6 5-1.6"/></svg></span>
+          <div><h4>湘江边上</h4><p>夜景房视野开阔，看一江两岸灯火，适合慢游与纪念日。</p></div>
+        </div>
+        <div class="tip-item">
+          <span class="tip-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 4L2 9l10 5 10-5-10-5z"/><path d="M6 11.5V16c0 1.5 2.7 3 6 3s6-1.5 6-3v-4.5"/></svg></span>
+          <div><h4>大学城 / 后湖</h4><p>性价比高、文艺氛围浓，步行可达后湖艺术区，适合长住慢逛。</p></div>
+        </div>
+      </div>
+      <div class="tab-panel" role="tabpanel" id="tp-tips" aria-labelledby="tb-tips" hidden>
+        <div class="tip-item">
+          <span class="tip-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 3c1 3-2 4-2 7a4 4 0 008 0c0-2-1-3-1-3s3 1 3 5a8 8 0 11-16 0c0-5 6-5 8-9z"/></svg></span>
+          <div><h4>吃辣量力而行</h4><p>湘菜默认中辣起步，备好肠胃药，微辣是对自己的温柔。</p></div>
+        </div>
+        <div class="tip-item">
+          <span class="tip-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></span>
+          <div><h4>错峰出行</h4><p>热门商圈傍晚最挤，行程尽量早出晚归；岳麓书院周一闭馆，记得提前预约。</p></div>
+        </div>
+        <div class="tip-item">
+          <span class="tip-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 21s7-5.5 7-11a7 7 0 10-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg></span>
+          <div><h4>夏季注意防晒</h4><p>白天暴晒，橘子洲与岳麓山安排在清晨或傍晚，体感会好很多。</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer class="m-footer">
+    <span class="seal">湘</span>
+    <h2>长沙漫游指南</h2>
+    <p class="fen">Changsha Citywalk Guide</p>
+    <div class="qr"><img src="assets/qr.png" alt="手机扫码打开本页"></div>
+    <p class="qr-cap">扫码在手机上打开本页</p>
+    <p><a class="pclink" href="pc.html">在电脑上查看桌面版 →</a></p>
+    <p class="copy">© 2025 长沙漫游 · 设计练习作品</p>
+  </footer>
+</div>
+
+<!-- 回到顶部 -->
+<button class="to-top" aria-label="回到顶部">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 20V6m0 0l-6 6m6-6l6 6"/></svg>
+</button>
+
+<!-- 自适应模态弹窗 -->
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-label="详情" hidden>
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-card">
+    <button class="modal-close" data-close aria-label="关闭">✕</button>
+    <div class="modal-body"></div>
+  </div>
+</div>
+
+<script src="assets/app.js"></script>
+</body>
+</html>
